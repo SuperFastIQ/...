@@ -78,7 +78,7 @@ public class PlayerMovement : MonoBehaviour
         {
             _playerSprite.flipX = false;
         }
-        else
+        else if (directionX < 0)
         {
             _playerSprite.flipX = true;
         }
