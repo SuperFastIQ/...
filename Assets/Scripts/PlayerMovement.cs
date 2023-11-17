@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Debug.Log("Oy"); //Message in debug window
 
-        _playerRigidBody = GetComponent<Rigidbody2D>(); //hoi
+        _playerRigidBody = GetComponent<Rigidbody2D>(); //aaaaa
         _playerAnimations = GetComponent<Animator>();
         _playerSprite = GetComponent<SpriteRenderer>();
         _playerHitBox = GetComponent<BoxCollider2D>();
