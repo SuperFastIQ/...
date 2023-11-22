@@ -48,7 +48,7 @@ public class PlayerMovement : MonoBehaviour
         //GetButtonDown --> For Input set within unity's inputmanager, use ""
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
-            _jumpSFX.Play();//Master branch change after branching change 1
+            _jumpSFX.Play();
             _playerRigidBody.velocity = new Vector2(_playerRigidBody.velocity.x, _jumpForce); //To access another component within object
         }
 

@@ -20,13 +20,13 @@ public class PlayerLife : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Traps"))
         {
-            Die();//Trying get a merge conflict (different branch)
+            Die();
         }
     }
 
     private void Die()
     {
-        _dyingSFX.Play();//branch change 1
+        _dyingSFX.Play();
         _animator.SetTrigger("Die");
         _rigidbody2D.bodyType = RigidbodyType2D.Static;
     }
