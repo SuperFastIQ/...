@@ -22,10 +22,12 @@ public class PlayerMovement : MonoBehaviour
         Falling,
     }
 
+    [SerializeField] private AudioSource _jumpSFX;
+
     // Start is called before the first frame update
     void Start() //Stuff that needs to happen when starting the game (initialize)
     {
-        Debug.Log("Oy"); //Message in debug window
+        //Debug.Log("Oy"); //Message in debug window
 
         _playerRigidBody = GetComponent<Rigidbody2D>(); //aaaaa
         _playerAnimations = GetComponent<Animator>();
@@ -46,6 +48,7 @@ public class PlayerMovement : MonoBehaviour
         //GetButtonDown --> For Input set within unity's inputmanager, use ""
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
+            _jumpSFX.Play();
             _playerRigidBody.velocity = new Vector2(_playerRigidBody.velocity.x, _jumpForce); //To access another component within object
         }
 
