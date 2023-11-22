@@ -20,7 +20,7 @@ public class PlayerLife : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Traps"))
         {
-            Die();
+            Die();//Trying get a merge conflict (different branch)
         }
     }
 
