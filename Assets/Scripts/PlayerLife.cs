@@ -26,7 +26,7 @@ public class PlayerLife : MonoBehaviour
 
     private void Die()
     {
-        _dyingSFX.Play();
+        _dyingSFX.Play();//branch change 1
         _animator.SetTrigger("Die");
         _rigidbody2D.bodyType = RigidbodyType2D.Static;
     }
